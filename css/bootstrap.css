@@ -2085,7 +2085,9 @@ pre code {
 }
 
 .col-xs-12 {
-    width: 100%
+   max-width:  100%;
+   display: block;
+   height: auto;
 }
 
 .col-xs-11 {
