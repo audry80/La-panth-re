@@ -362,6 +362,9 @@ a:hover {
     z-index: 2;
 }
 
+
+
+
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -394,7 +397,7 @@ a:hover {
     .nav-center .nav>li {
         float: none;
         display: inline-block;
-    }
+    }    
 
     .nav-center .site-navigation {
         position: relative;
