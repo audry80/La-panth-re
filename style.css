@@ -397,7 +397,7 @@ a:hover {
     .nav-center .nav>li {
         float: none;
         display: inline-block;
-    }    
+    }
 
     .nav-center .site-navigation {
         position: relative;
@@ -661,7 +661,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757 !important;
+    color: #232323 !important;
 }
 
 .container {
@@ -702,16 +702,17 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF !important;
+    color: #505050 !important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
+    
 }
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto auto 50px auto;
 }
 
 h2 {
@@ -749,6 +750,9 @@ h4 {
     color: #FFFFFF !important;
 }
 
+.white1 {
+    color: #0a0101 !important;
+}
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -785,17 +789,23 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C !important;
+  
+    color: #f5f5f5  !important;
 }
+
+.tc-white1 {
+     color: #fcf8e3!important;
+     /* background-color: #F3976C;*/}
+
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF !important;
+    color: #232323 !important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956 !important;
-    color: #FFFFFF !important;
+    color: #1d1d1d!important;
 }
 
 .ltc-white {
@@ -861,13 +871,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -889,8 +899,8 @@ h4 {
     }
 
     .bloc {
-        padding-left: env(safe-area-inset-left);
-        padding-right: env(safe-area-inset-right);
+        --safe-area-inset-right: env(safe-area-inset-right);
+        --safe-area-inset-left :env(safe-area-inset-left);
     }
 
     .bloc-group,
@@ -901,10 +911,10 @@ h4 {
 
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
+        padding: 0 20px;
 
-        
-        padding-right: env(safe-area-inset-right,20px );
-        padding-left: env(safe-area-inset-left,20px );
+        --safe-area-inset-right: env(safe-area-inset-right);
+        --safe-area-inset-left :env(safe-area-inset-left);
     }
 
     .row-no-gutters {
